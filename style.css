@@ -53,6 +53,11 @@
 }
 
 
+*	{ 
+	box-sizing: border-box; 
+}
+
+
 html {
 	/*width: 924px; */
 	/*margin: 0 auto;*/
@@ -61,11 +66,7 @@ html {
 }
 
 
-body,
-button,
-input,
-select,
-textarea {
+body {
   color: black;
   font-family: 'open sans', sans-serif;
   font-weight: normal;
@@ -87,6 +88,7 @@ h1 {
 
 h2 {
 	font-size: 1.8rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -115,46 +117,58 @@ i {
 	font-style: italic;
 }
 
+
+.container {
+	width: 840px;
+   	margin: 0 auto;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+
+/*Header*/
+
 header {
-	background: #333 url('images/birds.jpg') no-repeat center center;
-	padding: 100px 0 0 0;
-	background-size: 100% 100%;
+	background: #333 url('images/birds.jpg') scroll no-repeat center center;
 	color: white;
 }
 
 
-.logo {
-	padding: 30px 0 20px 0;
+.birds {
 	text-align: center;
+	padding: 8rem 0 6rem;
+}
+
+
+.logo img {
+	display: block;
+   	margin: 0 auto 1.5rem;
 }
 
 
 header h1 {
 	display: inline-block;
-	text-align: center;
-	border-bottom: 2px solid #feaa3a;
-	padding: 30px 0 10px 0;
-	margin: 0 auto;
+	border-bottom: 1px solid #feaa3a;
 }
 
 
 header h2 {
-	margin: 0 auto;
-	padding: 20px 0 100px 0;
+	font-weight: normal;
+	margin-bottom: 1rem;
 }
 
 
-header img {
-	display: block;
-	margin: 0 auto;
-	margin-top: 150px;
+.hello {
+	padding: 3rem 0;
 }
 
 
 .headshot {
-	display: block;
 	float: left;
-	/*padding: 50px 50px 25px 80px;*/
+	width: 30%;
+	margin-right: 5%;
 }
 
 
@@ -163,98 +177,89 @@ header img {
 }
 
 
-.hello-title {
+.hello-desc h2 {
 	color: #feaa3a;
-	font-weight: bold;
-	display: inline;
-	height: 50px;
-	float: left;
-	width: 50%;
-	padding: 30px 0 0 0;
 }
 
 
 .hello-desc {
-	text-align: left;
-	display: block;
-	float: left;
-	width: 60%;
-	padding: 20px 0 60px 0;
+	float: right;
+	width: 65%;
 }
 
+
+/*Work Experience  */
 
 .work {
-	border-bottom: 2px solid #333; 
-	clear: both;
-	font-weight: bold;
-	padding: 60px 0 10px 0;	
-	/*margin: 0 5%;*/
+	margin: 0 auto;
+	padding: 1.8rem 0;
+}
+
+.work h2 {
+	border-bottom: 1px solid #333;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
 }
 
 
-.web-widgets {
+.experience {
+	margin-top: 1.8rem;
+	border-bottom: 1px solid #333;
+	padding-bottom: 1.8rem;
+}
+
+
+.web-widgets, .self-employed {
 	float: left;
-	width: 33%;
-	/*padding: 20px 0;*/
-	/*margin-left: 5%;*/
-	line-height: 1.2;
+	width: 30%;
+	margin-right: 5%;
 }
 
 
-.web-widgets-desc {
+.web-widgets p, .self-employed p {
+	margin-bottom: 0;
+}
+
+
+.web-widgets-desc, .self-employed-desc {
 	float: right;
-	width: 57%;
-	/*padding: 20px 0;*/
-	/*margin-right: 5%;*/
+	width: 65%;
 }
 
 
-.line {
-	display: block;
-	border: 1px solid #333;
-	/*margin: 0 5%;*/
+.experience:last-child {
+	border-bottom: none;
 }
 
 
-.self-employed {
-	float: left;
-	width: 33%;
-	padding: 20px 0 40px 0;
-	/*margin-left: 5%;*/
-	line-height: 1.2;
-}
-
-
-.self-employed-desc {
-	float: right;
-	width: 57%;
-	padding: 20px 0 40px 0;
-	/*margin-right: 5%;*/
-}
-
+/*Skills*/
 
 .clouds {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)),
-   url('images/clouds.jpg') no-repeat center center,
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)),
+   	url('images/clouds.jpg') no-repeat center center,
     #333;
+    color: white;
 }	  
 
 
 .skills {
 	padding: 50px;
-	color: white;
 	text-align: center;
 }
 
 
-.skills-title {
-	border-bottom: 2px solid #333;
+
+.skills h2 {
+	font-weight: normal;
 	text-transform: uppercase;
-	padding: 0 0 15px 0;
+	border-bottom: 1px solid white;
+	
+	
+
 }
 
 
-.skills-list li {
+/*.skills-list li {
 	border: 3px solid #feaa3a;
 	display: inline-block;
 	width: 80px;
@@ -264,29 +269,55 @@ header img {
 	border-radius: 50%;
 	padding: 17px;
 	margin: 50px 6px 20px 6px;
+}*/
+
+.skills-list {
+	margin: 3rem 0;
+}
+
+.skills-list li {
+	border: 3px solid #feaa3a;
+   	border-radius: 50%;
+   	float: left;
+   	height: 100px;
+   	width: 100px;
+   	line-height: 600%;
+   	margin: 0 14px;
+   	text-align: center;
+   	
+}
+
+.skills-list li:first-child {
+	margin-left: 0;
 }
 
 
-.education-title { 
+.skills-list li:last-child {
+	margin-right: 0;
+}
+
+
+/*Education*/
+
+.education h2 { 
 	border-bottom: 1px solid #333;
-	clear: both;
-	padding: 50px 0 20px 0;
-	/*margin: 0 5%;*/
+	padding-top: 3rem;
+	padding-bottom: .5rem;
+	text-transform: uppercase;
 }
 
 
 .school {
 	padding: 10px 0;
-	line-height: 1.5;
-	/*margin-left: 5%;*/
 }
 
 
 .school-desc {
 	padding: 0 0 50px 0;
-	/*margin-left: 5%;*/
 }
 
+
+/*Footer*/
 
 footer {
 	background-color: black;
@@ -295,16 +326,13 @@ footer {
 
 
 .connected {
-	border-bottom: 2px solid #333;
 	clear: both;
 	padding: 50px 0 25px 0;
-	/*margin: 0 5%;*/
 	text-transform: uppercase;
 }
 
-
-.social {
-	/*margin-right: 5%;*/
+.connected h2 {
+	border-bottom: 1px solid #333;
 }
 
 
@@ -320,7 +348,6 @@ footer {
 	float: left;
 	width: 33%;
 	padding: 20px 0;
-	/*margin-left: 5%;	*/
 	line-height: 1.5;
 	
 }
@@ -330,27 +357,7 @@ footer {
 	font-size: 10px;
 	text-transform: uppercase;
 	padding: 0 0 50px 0;
-	/*margin-left: 5%;*/
 }
 
 
-/*strong {
-	color: #feaa3a;
-	font-weight: bold;
-}
 
-
-em {
-	font-style: italic;
-}
-*/
-
-.clearfix {
-	overflow: auto;
-}
-
-.container {
-	/*background-color: red;*/
-	width: 840px;
-   	margin: 0 auto;
-}
