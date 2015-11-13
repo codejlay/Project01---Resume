@@ -1,54 +1,54 @@
 /*fonts*/
 
 @font-face {
-    font-family: 'open sans';
-    src: url('./fonts/opensans-bold-webfont.eot');
-    src: url('./fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('./fonts/opensans-bold-webfont.woff') format('woff'),
-         url('./fonts/opensans-bold-webfont.ttf') format('truetype'),
-         url('./fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+	font-family: 'open sans';
+	src: url('./fonts/opensans-bold-webfont.eot');
+	src: url('./fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('./fonts/opensans-bold-webfont.woff2') format('woff2'),
+	url('./fonts/opensans-bold-webfont.woff') format('woff'),
+	url('./fonts/opensans-bold-webfont.ttf') format('truetype'),
+	url('./fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'open sans';
-    src: url('./fonts/opensans-bolditalic-webfont.eot');
-    src: url('./fonts/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/opensans-bolditalic-webfont.woff2') format('woff2'),
-         url('./fonts/opensans-bolditalic-webfont.woff') format('woff'),
-         url('./fonts/opensans-bolditalic-webfont.ttf') format('truetype'),
-         url('./fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
-    font-weight: bold;
-    font-style: italic;
+	font-family: 'open sans';
+	src: url('./fonts/opensans-bolditalic-webfont.eot');
+	src: url('./fonts/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('./fonts/opensans-bolditalic-webfont.woff2') format('woff2'),
+	url('./fonts/opensans-bolditalic-webfont.woff') format('woff'),
+	url('./fonts/opensans-bolditalic-webfont.ttf') format('truetype'),
+	url('./fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+	font-weight: bold;
+	font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'open sans';
-    src: url('./fonts/opensans-italic-webfont.eot');
-    src: url('./fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/opensans-italic-webfont.woff2') format('woff2'),
-         url('./fonts/opensans-italic-webfont.woff') format('woff'),
-         url('./fonts/opensans-italic-webfont.ttf') format('truetype'),
-         url('./fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
+	font-family: 'open sans';
+	src: url('./fonts/opensans-italic-webfont.eot');
+	src: url('./fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('./fonts/opensans-italic-webfont.woff2') format('woff2'),
+	url('./fonts/opensans-italic-webfont.woff') format('woff'),
+	url('./fonts/opensans-italic-webfont.ttf') format('truetype'),
+	url('./fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'open sans';
-    src: url('./fonts/opensans-regular-webfont.eot');
-    src: url('./fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('./fonts/opensans-regular-webfont.woff') format('woff'),
-         url('./fonts/opensans-regular-webfont.ttf') format('truetype'),
-         url('./fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'open sans';
+	src: url('./fonts/opensans-regular-webfont.eot');
+	src: url('./fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+	url('./fonts/opensans-regular-webfont.woff') format('woff'),
+	url('./fonts/opensans-regular-webfont.ttf') format('truetype'),
+	url('./fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
@@ -59,20 +59,17 @@
 
 
 html {
-	/*width: 924px; */
-	/*margin: 0 auto;*/
-	/*font-family: 'open sans', sans-serif;*/
 	font-size: 16px;
 }
 
 
 body {
-  color: black;
-  font-family: 'open sans', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.5;
+	color: black;
+	font-family: 'open sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 
@@ -105,12 +102,12 @@ a {
 
 
 a:hover {
-    color: maroon;
+	color: maroon;
 }
 
 
 p {
-   margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 i {
@@ -119,8 +116,12 @@ i {
 
 
 .container {
-	width: 840px;
-   	margin: 0 auto;
+	margin: 0 auto;
+	max-width: 840px;
+	width: 95%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+
 }
 
 .clearfix {
@@ -144,7 +145,9 @@ header {
 
 .logo img {
 	display: block;
-   	margin: 0 auto 1.5rem;
+	margin: 0 auto 1.5rem;
+	height: auto;
+	max-width: 100px;
 }
 
 
@@ -162,68 +165,59 @@ header h2 {
 
 .hello {
 	padding: 3rem 0;
+	text-align: center;
 }
 
 
 .headshot {
-	float: left;
-	width: 30%;
-	margin-right: 5%;
+	max-width: 100px;
+	height: auto;
 }
 
 
 .hello {
-	 background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)) fixed no-repeat center center;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)) fixed no-repeat center center;
 }
 
 
 .hello-desc h2 {
 	color: #feaa3a;
-}
-
-
-.hello-desc {
-	float: right;
-	width: 65%;
+	font-weight: bold;
 }
 
 
 /*Work Experience  */
 
 .work {
-	margin: 0 auto;
-	padding: 1.8rem 0;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+	
 }
 
 .work h2 {
 	border-bottom: 1px solid #333;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 
 .experience {
 	margin-top: 1.8rem;
 	border-bottom: 1px solid #333;
-	padding-bottom: 1.8rem;
+	padding-bottom: 1rem;
 }
 
 
 .web-widgets, .self-employed {
-	float: left;
-	width: 30%;
-	margin-right: 5%;
+	text-align: center;
+	margin-bottom: .5rem;
 }
 
 
 .web-widgets p, .self-employed p {
 	margin-bottom: 0;
-}
-
-
-.web-widgets-desc, .self-employed-desc {
-	float: right;
-	width: 65%;
 }
 
 
@@ -236,40 +230,24 @@ header h2 {
 
 .clouds {
 	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)),
-   	url('images/clouds.jpg') no-repeat center center,
-    #333;
-    color: white;
+	url('images/clouds.jpg') fixed no-repeat center center,
+	#333;
+	color: white;
+	padding: 3rem 0;
 }	  
 
 
 .skills {
-	padding: 50px;
 	text-align: center;
 }
-
 
 
 .skills h2 {
 	font-weight: normal;
 	text-transform: uppercase;
 	border-bottom: 1px solid white;
-	
-	
-
 }
 
-
-/*.skills-list li {
-	border: 3px solid #feaa3a;
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	line-height: 80px;
-	text-align: center;
-	border-radius: 50%;
-	padding: 17px;
-	margin: 50px 6px 20px 6px;
-}*/
 
 .skills-list {
 	margin: 3rem 0;
@@ -277,43 +255,34 @@ header h2 {
 
 .skills-list li {
 	border: 3px solid #feaa3a;
-   	border-radius: 50%;
-   	float: left;
-   	height: 100px;
-   	width: 100px;
-   	line-height: 600%;
-   	margin: 0 14px;
-   	text-align: center;
-   	
-}
-
-.skills-list li:first-child {
-	margin-left: 0;
-}
-
-
-.skills-list li:last-child {
-	margin-right: 0;
+	border-radius: 50%;
+	height: 112px;
+	width: 112px;
+	line-height: 650%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 
 /*Education*/
 
+.education {
+	padding: 3rem 0;
+}
+
 .education h2 { 
 	border-bottom: 1px solid #333;
-	padding-top: 3rem;
 	padding-bottom: .5rem;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 
 .school {
 	padding: 10px 0;
-}
-
-
-.school-desc {
-	padding: 0 0 50px 0;
+	text-align: center;
 }
 
 
@@ -322,42 +291,190 @@ header h2 {
 footer {
 	background-color: black;
 	color: white;
+	padding: 3rem 0;
 }
 
 
 .connected {
-	clear: both;
-	padding: 50px 0 25px 0;
 	text-transform: uppercase;
+	text-align: center;
 }
+
 
 .connected h2 {
 	border-bottom: 1px solid #333;
 }
 
 
+.social-list {
+	margin: .05rem 0 2rem;
+}
+
+
 .social-list li {
-	float: right;
-	padding: 20px 0 10px 15px;
 	display: inline-block;
+}
+
+
+.social-list a {
+	padding: 0 .5rem;
 }
 
 
 .address {
 	text-transform: uppercase;
-	float: left;
-	width: 33%;
-	padding: 20px 0;
-	line-height: 1.5;
-	
+	line-height: 1rem;
+	margin-bottom: 3rem;
 }
 
 
 .copyright {
-	font-size: 10px;
+	font-size: .75rem;
 	text-transform: uppercase;
 	padding: 0 0 50px 0;
 }
 
+
+/* Media queries */
+/*-----------------------------------------*/
+/* Tablet and up */
+
+@media screen and (min-width: 600px) {
+
+	.birds {
+		text-align: center;
+	}
+
+
+	.logo img {
+		max-width: none;
+	}
+
+
+	.hello {
+		text-align: left;
+	}
+
+
+	.headshot {
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		max-width: none;
+	}
+
+
+	.hello-desc {
+		float: right;
+		width: 65%;
+	}
+
+
+	/*Work Experience  */
+
+	.work {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	.work h2 {
+		text-align: left;
+	}
+
+
+	.web-widgets, .self-employed {
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		text-align: left;
+	}
+
+
+	.web-widgets p, .self-employed p {
+		margin-bottom: 0;
+	}
+
+
+	.web-widgets-desc, .self-employed-desc {
+		float: right;
+		width: 65%;
+	}
+
+
+	.experience:last-child {
+		border-bottom: none;
+	}
+
+
+	/*Skills*/
+
+	.skills-list li {
+		margin: 5px 10px;
+		display: inline-block;
+	}
+
+
+	/*Education*/
+
+	.education h2 { 
+		text-align: left;
+	}
+
+
+	.school {
+		text-align: left;
+	}
+
+
+	/*Footer*/
+
+	footer {
+		background-color: black;
+		color: white;
+		padding: 3rem 0;
+	}
+
+
+	.connected {
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+
+	.connected h2 {
+		text-align: left;
+	}
+
+
+	.social-list {
+		float: right;
+	}
+
+
+	.social-list li {
+		display: inline-block;
+	}
+
+
+	.address {
+		float: left;
+		text-align: left;
+		line-height: 1rem;
+	}
+
+
+	.copyright {
+		float: left;
+	}
+}
+
+@media screen and (min-width: 840px) {
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+}   
 
 
