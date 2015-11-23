@@ -1,4 +1,4 @@
-/*fonts*/
+/*Font Squirrel*/
 
 @font-face {
 	font-family: 'open sans';
@@ -53,6 +53,8 @@
 }
 
 
+/*Global*/
+
 *	{ 
 	box-sizing: border-box; 
 }
@@ -73,6 +75,43 @@ body {
 }
 
 
+.container {
+	margin: 0 auto;
+	max-width: 840px;
+	width: 95%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+
+.clearfix {
+	overflow: auto;
+}
+
+
+a {
+	color: #feaa3a;
+	text-decoration: none;
+}
+
+
+a:hover {
+	color: maroon;
+}
+
+
+p {
+	margin-bottom: 1rem;
+}
+
+
+i {
+	font-style: italic;
+}
+
+
+/*Fonts*/
+
 h1, h2, h3 {
 	font-weight: bold;
 }
@@ -92,40 +131,6 @@ h2 {
 h3 {
 	font-size: 1.2rem;
 	color: #feaa3a;
-}
-
-
-a {
-	color: #feaa3a;
-	text-decoration: none;
-}
-
-
-a:hover {
-	color: maroon;
-}
-
-
-p {
-	margin-bottom: 1rem;
-}
-
-i {
-	font-style: italic;
-}
-
-
-.container {
-	margin: 0 auto;
-	max-width: 840px;
-	width: 95%;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
-
-}
-
-.clearfix {
-	overflow: auto;
 }
 
 
@@ -191,9 +196,8 @@ header h2 {
 .work {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-
-	
 }
+
 
 .work h2 {
 	border-bottom: 1px solid #333;
@@ -253,6 +257,7 @@ header h2 {
 	margin: 3rem 0;
 }
 
+
 .skills-list li {
 	border: 3px solid #feaa3a;
 	border-radius: 50%;
@@ -271,6 +276,7 @@ header h2 {
 .education {
 	padding: 3rem 0;
 }
+
 
 .education h2 { 
 	border-bottom: 1px solid #333;
@@ -331,7 +337,6 @@ footer {
 .copyright {
 	font-size: .75rem;
 	text-transform: uppercase;
-	padding: 0 0 50px 0;
 }
 
 
@@ -476,5 +481,3 @@ footer {
 		width: 100%;
 	}
 }   
-
-
