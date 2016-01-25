@@ -1,5 +1,7 @@
 # Project 1 - Laura Ipsum Resume
 
+View deployed site through [GitHub Pages.](http://codejlay.github.io/project01-laura-ipsum-resume/)
+
 **Summary:**
 
 A one-page online website for Laura Ipsum.
